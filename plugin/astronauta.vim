@@ -5,7 +5,6 @@ augroup Astronauta
   autocmd Filetype * :lua require('astronauta.ft').do_filetype(vim.fn.expand("<amatch>"))
 augroup END
 
-
 if get(g:, 'astronauta_load_keymap', v:true)
   lua require('astronauta.keymap')
 end
