@@ -9,3 +9,7 @@ augroup END
 if get(g:, 'astronauta_load_keymap', v:true)
   lua require('astronauta.keymap')
 end
+
+if get(g:, 'astronauta_load_plugins', v:true)
+  lua require('astronauta.plugin').source()
+end
