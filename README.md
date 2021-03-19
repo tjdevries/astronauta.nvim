@@ -30,4 +30,4 @@ That will get printed whenever you open a `.vim` file.
 
 ## Lua `plugin`s
 
-To automatically run a file on startup with lua, put the file in `lua/plugin/*.lua` and the file will be executed at statup.
+To automatically run a file on startup with lua, put the file in `lua/plugin/*.lua` and the file will be executed at startup.
