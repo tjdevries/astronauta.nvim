@@ -10,6 +10,10 @@ Until I merge: https://github.com/neovim/neovim/pull/13823 you can use lua keyma
 For example:
 
 ```lua
+-- You need to do this if you want to call the code from init.lua
+vim.cmd [[runtime plugin/astronauta.vim]]
+
+-- elsewher in your vim files
 local nnoremap = vim.keymap.nnoremap
 
 nnoremap { '<leader>hello', function() print("Hello world, from lua") end }
