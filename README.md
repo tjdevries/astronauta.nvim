@@ -17,6 +17,22 @@ vim.cmd [[runtime plugin/astronauta.vim]]
 local nnoremap = vim.keymap.nnoremap
 
 nnoremap { '<leader>hello', function() print("Hello world, from lua") end }
+
+-- To add more options, you can do something like:
+nmap {
+  "<leader>t",
+
+  function()
+    -- Only do something in a lua file
+    if vim.bo.filetype == "lua" then
+      return "<Plug>PlenaryTestFile"
+    end
+
+    return ""
+  end,
+
+  expr = true,
+}
 ```
 
 ## Lua ftplugins
