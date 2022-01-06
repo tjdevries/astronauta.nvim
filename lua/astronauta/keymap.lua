@@ -1,3 +1,8 @@
+if vim.fn.has "nvim-0.7" == 1 then
+  vim.notify("Astronauta keymaps are deprecated. Please uninstall the plugin and see latest neovim", "error")
+  return
+end
+
 local keymap = {}
 
 -- Have to use a global to handle re-requiring this file and losing all of the keymap.
